@@ -1,5 +1,6 @@
  #define SIZE 8
-
+ #define len 10
+// Initialization of enum which is used to denote each disk
     enum colour{
         WHITE,
         BLACK,
@@ -22,6 +23,7 @@
         int points;
     } player;
 
+    //The structs player1 and player2 are declared with extern keyword so that other functions and files can directly access them.
     extern player player1;
     extern player player2;
  
