@@ -6,11 +6,10 @@ player player1;
 player player2;
 int main()
 {
-    // Variables declaration
-
-
+    //Declaration of the board of type disk
     disk board[SIZE][SIZE];
-
+    
+    //Calling each function one by one which initialise teh board, perform the game logic and print the result
     initializePlayers();
 
     initializeBoard(board);
@@ -18,6 +17,5 @@ int main()
     printBoard(board);
     
     gamelogic(board, player1, player2);//invoke a method that implements the game logic
-
 
 }
