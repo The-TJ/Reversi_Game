@@ -1,9 +1,15 @@
 #include <stdbool.h>
+
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include "disksAndPlayers.h"
+
 player player1;
+
 player player2;
+
 int main()
 {
     //Declaration of the board of type disk
