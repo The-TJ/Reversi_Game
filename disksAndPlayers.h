@@ -1,16 +1,17 @@
  #define SIZE 8
  #define len 10
+
+   typedef struct position{
+        int row;
+        int col;
+    } position;
+
 // Initialization of enum which is used to denote each disk
     enum colour{
         WHITE,
         BLACK,
         NONE
     };
-
-    typedef struct position{
-        int row;
-        int col;
-    } position;
 
     typedef struct disk{
         enum colour type;
