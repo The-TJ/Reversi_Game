@@ -60,5 +60,13 @@ void initializeBoard(disk board [SIZE][SIZE]){
                     }
                 else
                     board[i][j].type = NONE;
+            }
+            board[i][j].pos.row = i;
+            board[i][j].pos.col = j;
+
+            }
+        }
+    }
+
 
 
