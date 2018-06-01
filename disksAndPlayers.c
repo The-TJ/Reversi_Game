@@ -37,3 +37,13 @@ void initializeBoard(disk board [SIZE][SIZE]){
  //board initialization
     for(i=0; i< SIZE; i++){
         for(j=0;j<SIZE; j++){
+            if(i==3){
+                if(j==3)
+                    board[i][j].type = WHITE;
+                else{
+                    if(j==4)
+                        board[i][j].type = BLACK;
+                    else
+                        board[i][j].type = NONE;
+                    }
+
