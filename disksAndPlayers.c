@@ -46,4 +46,11 @@ void initializeBoard(disk board [SIZE][SIZE]){
                     else
                         board[i][j].type = NONE;
                     }
+                }
+            else {
+                if(i==4){
+                    if(j == 3)
+                        board[i][j].type = BLACK;
+                    else {
+                        if(j == 4)
 
