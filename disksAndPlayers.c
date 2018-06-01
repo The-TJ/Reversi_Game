@@ -32,3 +32,8 @@ void initializePlayers(){
     printf("%s your disks are symbolised by 0\n", player2.name);
 }
 
+void initializeBoard(disk board [SIZE][SIZE]){
+ int i, j;
+ //board initialization
+    for(i=0; i< SIZE; i++){
+        for(j=0;j<SIZE; j++){
