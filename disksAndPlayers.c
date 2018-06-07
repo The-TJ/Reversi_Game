@@ -67,6 +67,35 @@ void initializeBoard(disk board [SIZE][SIZE]){
             }
         }
     }
+void printBoard(disk board[SIZE][SIZE]){
+    int i,j;
+    j = 0;
+
+    printf("\n    ");
+    for(i=0; i< SIZE; i++){
+        printf("%d   ",i+1);
+    }
+    for(i=0; i< SIZE; i++){
+        printf("\n%d | ", i+1);
+        for(j=0;j<SIZE; j++){
+            switch(board[i][j].type){
+                case BLACK:
+                    printf("1 | ");
+                    break;
+                case WHITE:
+                    printf("0 | ");
+                    break;
+                case NONE:
+                    printf("x | ");
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    printf("\n");
+}
+
 
 
 
