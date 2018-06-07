@@ -108,6 +108,17 @@ void gamelogic(disk board[SIZE][SIZE], player player1, player player2)
             checker+=1;
         }
 
+else
+        {
+            possiblemoves(board, player2);  //Calling the function with the board and the current players struct as parameters
+            checker+=1;
+        }
+    }
+    if(checker>=64)
+    {
+        results();    //When the board is full, display the result
+    }
+}
 
 
 
