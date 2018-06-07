@@ -95,6 +95,18 @@ void printBoard(disk board[SIZE][SIZE]){
     }
     printf("\n");
 }
+void gamelogic(disk board[SIZE][SIZE], player player1, player player2)
+{
+	//This function iterates till all the positions in the board are taken or if any player can't make a move
+    int checker = 4;
+    int chance = 1;
+    while(checker<64 && chance==1)
+    {
+        if(checker%2==0)
+        {
+            possiblemoves(board, player1);  //Calling the function with the board and the current players struct as parameters
+            checker+=1;
+        }
 
 
 
