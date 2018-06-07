@@ -119,6 +119,6 @@ else
         results();    //When the board is full, display the result
     }
 }
-
+void possiblemoves(disk board[SIZE][SIZE], player Cplayer)
 
 
