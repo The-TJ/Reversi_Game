@@ -325,4 +325,35 @@ void possiblemoves(disk board[SIZE][SIZE], player Cplayer)
                             }
                         }
                         if(i+1<=SIZE)            //Neighbpur position one row below and in the same coloumn
+			{
+                            if(board[i+1][j].type==NONE)
+                            {
+                                int check=1;
+                                int a=i-1;
+                                int b=j;
+                                while(a>=0 && check==1)
+                                {
+                                    if(board[a][b].type==BLACK)
+                                    {
+                                    	if((i+1>=0 && i+1<8) && (j>=0 && j<8))
+                                    	{
+                                        	arr[num][0]=i+1;
+                                        	arr[num][1]=j;
+                                        	arr[num][2] = i;
+                                        	arr[num][3] = j;
+                                        	num++;
+                                        	check=0;
+                                        }
+                                        break;
+                                    }
+                                    else if(board[a][b].type==NONE)
+                                        break;
+                                    else if(board[a][b].type == WHITE)
+                                    {
+                                        a-=1;
+                                    }
+                                }
+                            }
+                        }
+                        if(i+1<=SIZE && j+1<=SIZE)              //Neighbpur position one row below and one coloum to the right
 
