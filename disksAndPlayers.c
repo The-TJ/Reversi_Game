@@ -406,4 +406,36 @@ else
                     case BLACK: // When we find a rival disk, a series of if statements determine if any of its neighbouring element is a possible move 
 
                         if(i-1>=0 && j-1>=0)       //Neighbpur position one row above and one coloum to the left
-	
+			{
+                            if(board[i-1][j-1].type==NONE)
+                            {
+                                int check=1;
+                                int a=i+1;
+                                int b=j+1;
+                                while(a<SIZE && b<SIZE && check==1)
+                                {
+                                    if(board[a][b].type==WHITE)
+                                    {
+                                    	if((i-1>=0 && i-1<8) && (j-1>=0 && j-1<8))
+                                    	{
+                                        	arr[num][0] = i-1;
+                                        	arr[num][1] = j-1;
+                                        	arr[num][2] = i;
+                                        	arr[num][3] = j;
+                                        	num++;
+                                        	check=0;
+                                        }
+                                        break;
+                                    }
+                                    else if(board[a][b].type==NONE)
+                                        break;
+                                    else if(board[a][b].type==BLACK)
+                                    {
+                                        a+=1;
+                                        b+=1;
+                                    }
+                                }
+                            }
+                        }
+                        if(i-1>=0)        //Neighbpur position one row above and in the same coloumn
+
