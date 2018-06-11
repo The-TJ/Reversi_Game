@@ -394,5 +394,16 @@ void possiblemoves(disk board[SIZE][SIZE], player Cplayer)
             }
         }
     }
-    }
+}
+else
+    {
+        for(int i=0; i<SIZE;i++)
+        {
+            for(int j=0; j<SIZE;j++)
+            {
+                switch(board[i][j].type)
+                {
+                    case BLACK: // When we find a rival disk, a series of if statements determine if any of its neighbouring element is a possible move 
 
+                        if(i-1>=0 && j-1>=0)       //Neighbpur position one row above and one coloum to the left
+	
