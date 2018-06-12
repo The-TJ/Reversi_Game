@@ -468,5 +468,5 @@ else
                                 }
                             }
                         }
-                        if(i-1>=0 && j+1<=SIZE)        //Neighbpur position one row above and one coloumn to the right
+                        
 
