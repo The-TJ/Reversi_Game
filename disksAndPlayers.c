@@ -437,8 +437,7 @@ else
                                 }
                             }
                         }
-                        if(i-1>=0)        //Neighbpur position one row above and in the same coloumn
-			{
+                       
                         
                         
 
