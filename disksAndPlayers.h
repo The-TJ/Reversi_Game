@@ -41,3 +41,4 @@
     void possiblemoves(disk board[SIZE][SIZE], player Cplayer);
     
     
+void gamelogic(disk board[SIZE][SIZE], player player1, player player2);
