@@ -20,8 +20,8 @@ int main()
 
     initializeBoard(board);
 
-    printBoard(board);
     
-    gamelogic(board, player1, player2);//invoke a method that implements the game logic
+    
+    gamelogic(board, player1, player2);// a method that implements the game logic
 
 }
