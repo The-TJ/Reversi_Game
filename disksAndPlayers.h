@@ -1,4 +1,4 @@
- #define SIZE 8
+ #define SIZE 
  #define len 10
 
    typedef struct position{
