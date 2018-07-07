@@ -1,4 +1,4 @@
-#define SIZE 8
+#define 
 
 #define len 10
 
