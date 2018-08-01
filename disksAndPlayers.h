@@ -1,4 +1,3 @@
-#define SIZE 8
 #define len 10
    typedef struct position{
         int row;
